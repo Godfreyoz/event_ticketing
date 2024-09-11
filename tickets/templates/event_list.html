@@ -1,0 +1,4 @@
+<!-- templates/tickets/event_list.html -->
+{% for event in events %}
+    <a href="{% url 'event_detail' event.id %}">{{ event.name }}</a><br>
+{% endfor %}

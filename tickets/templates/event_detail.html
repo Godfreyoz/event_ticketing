@@ -1,0 +1,5 @@
+<!-- templates/tickets/event_detail.html -->
+<h1>{{ event.name }}</h1>
+<p>{{ event.date }}</p>
+<p>{{ event.location }}</p>
+<a href="{% url 'purchase_ticket' event.id %}">Purchase Ticket</a>
